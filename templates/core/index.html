@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block nav %}
+    {% include "include/navbar.html" %}
+{% endblock %}
+{% block content %}
+		<div class="row" id="input">
+			<p class="ui blue">
+				<h5>You are signed as <b class="text-success">{{ current_user }}</b>
+			(<a href="/logout">logout</a>).
+				<span id="error" class="ui red"></span>
+				</h5>
+			</p>
+		</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+
+
+
+
+
